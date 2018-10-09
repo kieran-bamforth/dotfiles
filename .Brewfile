@@ -2,6 +2,7 @@ tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'jesseduffield/lazygit'
 tap 'kieran-bamforth/homebrew-repo'
+tap 'mscharley/homebrew'
 tap 'universal-ctags/universal-ctags'
 
 cask '1password'
@@ -119,6 +120,7 @@ brew 'macvim', args: [ 'env-std', 'with-override-system-vim', 'with-python@2' ]
 brew 'makefile2graph'
 brew 'mas'
 brew 'maven'
+brew 'mscharley/homebrew-homebrew/alacritty', args: ['HEAD']
 brew 'mycli'
 brew 'ncdu'
 brew 'node'
