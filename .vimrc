@@ -13,6 +13,7 @@ Plug 'ervandew/supertab'
 Plug 'godlygeek/tabular'
 Plug 'janko-m/vim-test'
 Plug 'joshdick/onedark.vim'
+Plug 'juanibiapina/vim-runner'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/gv.vim'
 Plug 'junegunn/limelight.vim'
@@ -406,5 +407,13 @@ let g:gitgutter_sign_removed = emoji#for('fire')
 " Dash.
 let g:dash_map = { 'yaml': ['cloudformation'] }
 
-set formatoptions+=j
+" Setup projectionist
+let g:projectionist_heuristics = {
+  \  "test/cucumber" : {
+  \    "*.feature" : {
+  \      "runner" : "bundle exec cucumber",
+  \    },
+  \  }
+  \}
+
 " }}}
