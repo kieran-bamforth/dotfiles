@@ -184,6 +184,13 @@ function aws_ec2_instance_iam_profiles {
     aws iam list-instance-profiles | jq '.InstanceProfiles[] | {Arn: .Arn, RoleArns: .Roles[].Arn}'
 }
 
+function aws_ec2_lb_health {
+    $TARGET_GROUP=$1
+    aws elbv2 describe-target-groups
+    TARGET_GROUP_ARN=`aws elbv2 list-target-groups | jq ".TargetGroups[] | select(.TargetGroupName | contains(\"${TARGET_GROUP\"))"`
+    aws elbv2 describe-target-health --target-group-arn $TARGET_GROUP_ARN
+}
+
 function aws_iam_list_roles {
     aws iam list-roles --query "Roles[].[RoleName,Arn]"
 }

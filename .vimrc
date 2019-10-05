@@ -433,4 +433,5 @@ let g:LanguageClient_serverCommands = {
 " This fucks with the quickfix list.
 let g:LanguageClient_diagnosticsEnable=0
 
+let g:polyglot_disabled = ['python']
 " }}}
