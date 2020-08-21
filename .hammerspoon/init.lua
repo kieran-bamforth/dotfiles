@@ -17,6 +17,7 @@ local spectacle = {"cmd", "alt"}
 hotkey.bind(hyper, "2", function() os.execute("open \"focus://focus?minutes=25\"") end)
 hotkey.bind(hyper, 'A', function() application.launchOrFocus('Reeder') end)
 hotkey.bind(hyper, 'B', function() application.launchOrFocus('weka-3-9-2-oracle-jvm') end)
+hotkey.bind(hyper, 'J', function() application.launchOrFocus('IntelliJ IDEA CE') end)
 hotkey.bind(hyper, 'C', function() application.launchOrFocus('Calendar') end)
 hotkey.bind(hyper, 'E', function() application.launchOrFocus('Preview') end)
 hotkey.bind(hyper, 'F', function() application.launchOrFocus('Finder') end)
