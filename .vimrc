@@ -195,6 +195,7 @@ nnoremap <leader>va :vsplit ~/src/dotfiles/.vim/bundle/vim-kieran/plugin/abbrevi
 nnoremap <leader>vb :vsplit ~/src/dotfiles<CR> lcd ~/src/dotfiles<CR>
 nnoremap <leader>vs :source $MYVIMRC<CR>
 nnoremap <leader>vu :UltiSnipsEdit<CR>
+nnoremap <leader>vz :vsplit ~/src/dotfiles/utilities.zsh<CR>
 
 " Git shortcuts
 nnoremap <leader>ga :Git add %<CR><CR>
