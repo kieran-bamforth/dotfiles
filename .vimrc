@@ -190,9 +190,9 @@ nnoremap <leader>fu :Buffers<CR>
 nnoremap <leader>fj :call jira#fzf_ui()<CR>
 
 " Easy edit / source VIMRC
-nnoremap <leader>ve :vsplit ~/src/dotfiles/.vimrc<CR>
 nnoremap <leader>va :vsplit ~/src/dotfiles/.vim/bundle/vim-kieran/plugin/abbreviations.vim<CR>
 nnoremap <leader>vb :vsplit ~/src/dotfiles<CR> lcd ~/src/dotfiles<CR>
+nnoremap <leader>ve :vsplit ~/src/dotfiles/.vimrc<CR>
 nnoremap <leader>vs :source $MYVIMRC<CR>
 nnoremap <leader>vu :UltiSnipsEdit<CR>
 nnoremap <leader>vz :vsplit ~/src/dotfiles/utilities.zsh<CR>
@@ -218,6 +218,9 @@ nnoremap <leader>gx :GV<CR>
 " Dispatch
 nnoremap <leader>df :Focus make<space>
 nnoremap <leader>dr :Focus!<CR>
+
+" Projectionist
+nnoremap <leader>s :Start<CR>
 
 " Test
 nnoremap <leader>tt :TestNearest<CR>
