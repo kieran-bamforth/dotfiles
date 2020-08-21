@@ -183,6 +183,7 @@ nnoremap <C-p> :FZF<CR>
 nnoremap <leader>cd :call cd#fzf_ui()<CR>
 nnoremap <leader>ff :GFiles<CR>
 nnoremap <leader>fh :History:<CR>
+nnoremap <leader>fl :Lines<CR>
 nnoremap <leader>fm :Marks<CR>
 nnoremap <leader>ft :BTags<CR>
 nnoremap <leader>fu :Buffers<CR>
