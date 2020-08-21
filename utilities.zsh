@@ -226,6 +226,17 @@ function aws_assume_role_personal {
             ]
     }'
 }
+
+function aws_logs {
+    STREAM_NAME=$1
+
+    awslogs groups \
+        | grep $STREAM_NAME --color=never \
+        | xargs -I _ \
+        awslogs get \
+            --no-group --no-stream --timestamp --start 1h --watch  _
+}
+
 # }}}
 # Cosmos. {{{
 function cosmos_ssh {
